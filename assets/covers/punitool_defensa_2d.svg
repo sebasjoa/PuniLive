@@ -1,1 +1,108 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540"><rect width="960" height="540" fill="#091019"/><circle cx="740" cy="130" r="65" fill="#134e4a" opacity="0.65"/><path d="M480 150L535 280L625 345L525 325L502 380L458 380L435 325L335 345L425 280Z" fill="#0284c7" stroke="#7dd3fc" stroke-width="6"/><text x="480" y="455" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-weight="800" font-size="42" letter-spacing="1">PUNITOOLSLIVE · DEFENSA 2D</text><text x="480" y="500" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="22">Edición Táctica V32 · 11 Acciones en Vivo</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 576" width="100%" height="100%">
+  <defs>
+    <!-- Fondo espacial dinámico -->
+    <linearGradient id="spaceBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060914" />
+      <stop offset="45%" stop-color="#0b1326" />
+      <stop offset="85%" stop-color="#140822" />
+      <stop offset="100%" stop-color="#070312" />
+    </linearGradient>
+
+    <!-- Resplandor Cían / Azul Neón -->
+    <radialGradient id="portalGlow" cx="50%" cy="48%" r="48%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.55" />
+      <stop offset="35%" stop-color="#4facfe" stop-opacity="0.25" />
+      <stop offset="70%" stop-color="#7000ff" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Gradiente de la Nave / Emblema Defensor -->
+    <linearGradient id="shipMetal" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="30%" stop-color="#67e8f9" />
+      <stop offset="70%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#034375" />
+    </linearGradient>
+
+    <!-- Gradiente del Título -->
+    <linearGradient id="titleCyan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="45%" stop-color="#7dd3fc" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="titleGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <!-- Filtro de resplandor neón -->
+    <filter id="neonShield" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="1024" height="576" fill="url(#spaceBg)" />
+
+  <!-- Cuadrícula arcade sutil en perspectiva -->
+  <g stroke="rgba(2, 132, 199, 0.12)" stroke-width="1.5">
+    <line x1="0" y1="420" x2="1024" y2="420" />
+    <line x1="0" y1="465" x2="1024" y2="465" />
+    <line x1="0" y1="515" x2="1024" y2="515" />
+    <line x1="0" y1="570" x2="1024" y2="570" />
+    <line x1="512" y1="360" x2="100" y2="576" />
+    <line x1="512" y1="360" x2="300" y2="576" />
+    <line x1="512" y1="360" x2="512" y2="576" />
+    <line x1="512" y1="360" x2="724" y2="576" />
+    <line x1="512" y1="360" x2="924" y2="576" />
+  </g>
+
+  <!-- Partículas y estrellas -->
+  <g fill="#38bdf8" opacity="0.6">
+    <circle cx="160" cy="110" r="2.5" />
+    <circle cx="280" cy="80" r="1.5" />
+    <circle cx="820" cy="95" r="2" />
+    <circle cx="910" cy="180" r="3" />
+    <circle cx="120" cy="240" r="2" />
+    <circle cx="890" cy="330" r="1.5" />
+    <circle cx="410" cy="90" r="2" />
+    <circle cx="640" cy="130" r="2.5" />
+  </g>
+
+  <!-- Halo de portal / defensa central -->
+  <circle cx="512" cy="220" r="230" fill="url(#portalGlow)" />
+  <circle cx="512" cy="220" r="140" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.4" stroke-dasharray="12 8" />
+  <circle cx="512" cy="220" r="190" fill="none" stroke="#818cf8" stroke-width="1.5" opacity="0.3" stroke-dasharray="6 6" />
+
+  <!-- Flecha / Emblema Ciberespacial del Juego (Idéntico a la captura de la App) -->
+  <g filter="url(#neonShield)" transform="translate(512, 215)">
+    <!-- Alas traseras / sombras de poder -->
+    <path d="M0 -115 L68 18 L160 85 L60 62 L32 118 L-32 118 L-60 62 L-160 85 L-68 18 Z" fill="rgba(2, 132, 199, 0.3)" />
+    <!-- Nave principal -->
+    <path d="M0 -110 L58 15 L145 78 L52 58 L28 108 L-28 108 L-52 58 L-145 78 L-58 15 Z" fill="url(#shipMetal)" stroke="#e0f2fe" stroke-width="3.5" stroke-linejoin="round" />
+    <!-- Núcleo de energía central -->
+    <path d="M0 -65 L24 20 L0 50 L-24 20 Z" fill="#ffffff" />
+    <circle cx="0" cy="12" r="14" fill="#38bdf8" />
+    <circle cx="0" cy="12" r="7" fill="#ffffff" />
+  </g>
+
+  <!-- Título Estilizado tipo Logo -->
+  <g text-anchor="middle" font-family="'Chakra Petch', 'Arial Black', sans-serif">
+    <!-- Texto Superior -->
+    <text x="512" y="445" font-size="44" font-weight="900" letter-spacing="2" fill="url(#titleCyan)" stroke="#022845" stroke-width="3" paint-order="stroke fill">
+      PUNITOOLSLIVE
+    </text>
+    <!-- Texto Inferior Destacado -->
+    <text x="512" y="498" font-size="34" font-weight="800" letter-spacing="4" fill="url(#titleGold)" stroke="#3a1c02" stroke-width="2" paint-order="stroke fill">
+      DEFENSA 2D
+    </text>
+    <text x="512" y="535" font-size="16" font-weight="600" letter-spacing="2" fill="#94a3b8">
+      ADAPTACIÓN TÁCTICA · ACCIONES ASIGNABLES EN VIVO
+    </text>
+  </g>
+</svg>

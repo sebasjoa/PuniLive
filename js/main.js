@@ -6,7 +6,7 @@
 
 const PUNITOOLS_CONFIG = {
   // Enlace de descarga (configurable para GitHub)
-  executableDownloadUrl: "https://github.com/sebasjoa/PuniLive/releases/latest/download/PuniLive-Portable.exe",
+  executableDownloadUrl: "../PuniTool 4 Tiktok/release/PuniLive-Setup.exe",
 
   // Servidor oficial de Discord
   discordUrl: "https://discord.gg/kgaBXDJ9uu",
