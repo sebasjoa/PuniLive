@@ -5,8 +5,8 @@
  */
 
 const PUNITOOLS_CONFIG = {
-  // Enlace de descarga (configurable para GitHub)
-  executableDownloadUrl: "../PuniTool 4 Tiktok/release/PuniLive-Setup.exe",
+  // Enlace oficial de descarga directa para PuniLive Portable
+  executableDownloadUrl: "https://github.com/sebasjoa/PuniLive/releases/latest/download/PuniLive-Portable.exe",
 
   // Servidor oficial de Discord
   discordUrl: "https://discord.gg/kgaBXDJ9uu",
@@ -164,7 +164,7 @@ window.openGameModal = function (gameKey) {
       🚀 <em>Tu suscripción incluye automáticamente acceso a este y a todos los nuevos juegos que estamos desarrollando continuamente.</em>
     </p>
     <div style="margin-top:20px; display:flex; gap:12px; flex-wrap:wrap;">
-      <a href="${PUNITOOLS_CONFIG.executableDownloadUrl}" download class="btn-primary js-download-exe" style="flex:1;">
+      <a href="${PUNITOOLS_CONFIG.executableDownloadUrl}" class="btn-primary js-download-exe" style="flex:1;">
         Descargar PuniLive (.exe)
       </a>
       <button type="button" class="btn-secondary" onclick="closeModal('gameModal')">
