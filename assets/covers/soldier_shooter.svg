@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#12182c"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#0077ff"/>
+    </linearGradient>
+    <linearGradient id="neonOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff7700"/>
+      <stop offset="100%" stop-color="#ff0055"/>
+    </linearGradient>
+    <linearGradient id="roadGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+
+  <!-- Cyber Grid Lines -->
+  <g stroke="#3b82f6" stroke-opacity="0.15" stroke-width="1">
+    <line x1="0" y1="50" x2="800" y2="50"/>
+    <line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="380" x2="800" y2="380"/>
+  </g>
+
+  <!-- 3D Highway Perspective -->
+  <polygon points="260,450 540,450 440,160 360,160" fill="url(#roadGrad)" stroke="#00f0ff" stroke-width="2" stroke-opacity="0.4"/>
+  <!-- Lane dividers -->
+  <line x1="353" y1="450" x2="387" y2="160" stroke="#00f0ff" stroke-width="2" stroke-dasharray="15,10" stroke-opacity="0.6"/>
+  <line x1="447" y1="450" x2="413" y2="160" stroke="#00f0ff" stroke-width="2" stroke-dasharray="15,10" stroke-opacity="0.6"/>
+
+  <!-- War Tank (Left-center) -->
+  <g transform="translate(240, 260) scale(0.85)">
+    <!-- Tank body -->
+    <rect x="0" y="25" width="130" height="45" rx="10" fill="#334155" stroke="#38bdf8" stroke-width="3"/>
+    <!-- Tracks -->
+    <rect x="-10" y="55" width="150" height="25" rx="12" fill="#0f172a" stroke="#0284c7" stroke-width="2"/>
+    <circle cx="10" cy="67" r="7" fill="#64748b"/>
+    <circle cx="35" cy="67" r="7" fill="#64748b"/>
+    <circle cx="65" cy="67" r="7" fill="#64748b"/>
+    <circle cx="95" cy="67" r="7" fill="#64748b"/>
+    <circle cx="120" cy="67" r="7" fill="#64748b"/>
+    <!-- Turret -->
+    <rect x="35" y="5" width="60" height="25" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <!-- Cannon -->
+    <rect x="85" y="12" width="65" height="10" rx="3" fill="#0284c7"/>
+    <!-- Muzzle Flash -->
+    <polygon points="150,17 190,5 180,17 210,17 180,21 190,30" fill="#f59e0b" filter="url(#glow)"/>
+    <!-- Nitro flames behind -->
+    <polygon points="-10,40 -40,30 -60,40 -40,47" fill="#00f0ff" filter="url(#glow)"/>
+  </g>
+
+  <!-- Blue Soldier Squad (Center) -->
+  <g transform="translate(420, 240)">
+    <!-- Soldier 1 (Leader) -->
+    <circle cx="30" cy="20" r="14" fill="#38bdf8" filter="url(#glow)"/>
+    <rect x="18" y="34" width="24" height="35" rx="6" fill="#0284c7"/>
+    <rect x="32" y="42" width="22" height="6" rx="2" fill="#94a3b8"/>
+    <!-- Gun Laser Beam -->
+    <line x1="54" y1="45" x2="250" y2="45" stroke="#00f0ff" stroke-width="3" filter="url(#glow)"/>
+
+    <!-- Soldier 2 -->
+    <circle cx="-10" cy="40" r="12" fill="#38bdf8"/>
+    <rect x="-20" y="52" width="20" height="28" rx="5" fill="#0284c7"/>
+
+    <!-- Soldier 3 -->
+    <circle cx="70" cy="40" r="12" fill="#38bdf8"/>
+    <rect x="60" y="52" width="20" height="28" rx="5" fill="#0284c7"/>
+  </g>
+
+  <!-- Red Enemy Horde (Far End) -->
+  <g transform="translate(370, 140) scale(0.6)">
+    <circle cx="0" cy="0" r="14" fill="#ef4444" filter="url(#glow)"/>
+    <rect x="-10" y="14" width="20" height="25" rx="4" fill="#991b1b"/>
+    <circle cx="35" cy="10" r="12" fill="#ef4444"/>
+    <circle cx="-35" cy="10" r="12" fill="#ef4444"/>
+  </g>
+
+  <!-- Hazard Spinning Pole Indicator -->
+  <g transform="translate(560, 220)">
+    <rect x="-4" y="-35" width="8" height="70" rx="3" fill="#e11d48" transform="rotate(45)" filter="url(#glow)"/>
+    <circle cx="0" cy="0" r="7" fill="#fbbf24"/>
+    <!-- Skid trails -->
+    <path d="M -20,25 Q 0,40 25,35" stroke="#fbbf24" stroke-width="3" fill="none" opacity="0.8"/>
+  </g>
+
+  <!-- Top Badges -->
+  <rect x="30" y="25" width="130" height="32" rx="16" fill="rgba(15,23,42,0.8)" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="95" y="46" font-family="system-ui, sans-serif" font-size="12" font-weight="900" fill="#38bdf8" text-anchor="middle">TIKTOK 3D RUNNER</text>
+
+  <rect x="170" y="25" width="105" height="32" rx="16" fill="rgba(15,23,42,0.8)" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="222" y="46" font-family="system-ui, sans-serif" font-size="12" font-weight="900" fill="#22c55e" text-anchor="middle">60 FPS CCD</text>
+
+  <!-- Bottom Title Block -->
+  <rect x="0" y="360" width="800" height="90" fill="rgba(7,9,14,0.92)"/>
+  <line x1="0" y1="360" x2="800" y2="360" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.5"/>
+
+  <text x="40" y="405" font-family="system-ui, sans-serif" font-size="28" font-weight="900" fill="#ffffff" letter-spacing="1">ENDLESS SOLDIER SHOOTER 3D</text>
+  <text x="40" y="432" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#94a3b8">Tanque de Guerra (+30m) • Palo Giratorio (-30m) • Donaciones TikTok en Vivo • Biomas</text>
+
+  <g transform="translate(680, 385)">
+    <rect x="0" y="0" width="80" height="36" rx="18" fill="url(#neonCyan)"/>
+    <text x="40" y="23" font-family="system-ui, sans-serif" font-size="13" font-weight="900" fill="#000" text-anchor="middle">JUGAR</text>
+  </g>
+</svg>

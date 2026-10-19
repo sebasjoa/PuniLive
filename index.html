@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PuniLive — ¡Enciende tus Live, Diviértete con tu Comunidad y Multiplica tus Interacciones!</title>
+  <meta name="description" content="La suite interactiva para streamers de TikTok Live. Conecta tu directo en 1 clic, juega con tu comunidad con juegos interactivos y lee comentarios con voces virales de TikTok." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. HEADER & NAVEGACIÓN
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#inicio" class="logo-brand">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="url(#brandGrad)"/>
+          <defs>
+            <linearGradient id="brandGrad" x1="2" y1="2" x2="22" y2="22">
+              <stop offset="0%" stop-color="#ff1f3d"/>
+              <stop offset="100%" stop-color="#ff5722"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>PuniLive</span>
+        <span class="logo-badge">TIKTOK</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#funciones" class="nav-link">Qué Puedes Hacer</a>
+        <a href="#juegos" class="nav-link">Juegos en Vivo</a>
+        <a href="#planes" class="nav-link">Planes y Ofertas</a>
+        <a href="#faq" class="nav-link">Opiniones &amp; Preguntas</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="https://discord.gg/kgaBXDJ9uu" target="_blank" rel="noopener" class="nav-discord-link js-discord-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+          </svg>
+          Discord
+        </a>
+        <a href="../PuniTool 4 Tiktok/release/PuniTools for TikTok 1.0.0.exe" download class="btn-primary js-download-exe">
+          Descargar PuniLive (.exe)
+        </a>
+        <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Menú">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       2. HERO SECTION: 2 COLUMNAS EN WIDESCREEN
+       ======================================================================== -->
+  <section class="hero-section" id="inicio">
+    <div class="hero-ambient-glow"></div>
+    <div class="container hero-2col">
+      <!-- Columna 1: Propuesta de Valor, Mandato Principal y CTA -->
+      <div class="hero-text-col">
+        <span class="badge-tag">Streamer Gaming Suite para TikTok Live</span>
+
+        <h1 class="hero-title">
+          ¡Enciende tus Live, Diviértete con tu Comunidad y <span>Multiplica tus Interacciones!</span>
+        </h1>
+
+        <p class="hero-desc">
+          Convierte tu transmisión de TikTok en un espectáculo interactivo. Tus espectadores controlan la acción en pantalla con regalos y likes en juegos en tiempo real, mientras sus comentarios se leen con voces virales de TikTok y AI.
+        </p>
+
+        <div class="hero-features-list">
+          <div class="hero-feat-item">
+            <span class="feat-dot">✓</span>
+            <span>Conexión directa en 1 clic ingresando tu <code>@usuario</code> (sin contraseñas).</span>
+          </div>
+          <div class="hero-feat-item">
+            <span class="feat-dot">✓</span>
+            <span>Juegos interactivos oficiales y nuevos títulos en desarrollo permanente.</span>
+          </div>
+          <div class="hero-feat-item">
+            <span class="feat-dot">✓</span>
+            <span>Lectura de chat en vivo con 24 voces neuronales virales de TikTok.</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="../PuniTool 4 Tiktok/release/PuniTools for TikTok 1.0.0.exe" download class="btn-primary js-download-exe">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Descargar PuniLive (.exe)
+          </a>
+          <a href="https://discord.gg/kgaBXDJ9uu" target="_blank" rel="noopener" class="btn-discord js-discord-link">
+            <svg viewBox="0 0 24 24">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+            </svg>
+            Accede a nuestro Servidor de Discord
+          </a>
+        </div>
+
+        <div class="hero-subtext">
+          Windows 10 / 11 · Único archivo ejecutable · Sin instalaciones complejas
+        </div>
+      </div>
+
+      <!-- Columna 2: Mockup de la Herramienta PuniLive -->
+      <div class="hero-mockup-col">
+        <div class="app-frame">
+          <div class="app-frame-inner">
+            <img src="assets/img/punilive-app-dashboard.png" alt="Panel de PuniLive Gaming Suite" />
+          </div>
+          <div class="floating-badge">
+            <span class="pulse-dot"></span>
+            <span><strong>PuniLive Activo</strong> · Conexión directa con TikTok Live</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3. QUÉ PUEDES HACER CON LA HERRAMIENTA: 2 COLUMNAS EN WIDESCREEN
+       ======================================================================== -->
+  <section class="features-section" id="funciones">
+    <div class="container features-2col">
+      <!-- Columna Izquierda: Showcase de Voz & TTS con Captura Real -->
+      <div class="feature-showcase-visual">
+        <span class="badge-tag" style="margin-bottom:12px;">Módulo Exclusivo Incluido</span>
+        <div class="showcase-frame">
+          <img src="assets/img/punilive-tts-voices.png" alt="Módulo de Voz y TTS de TikTok en PuniLive" />
+        </div>
+        <div class="showcase-caption">
+          <strong>24 Voces Neuronales de TikTok &amp; AI:</strong> Lee automáticamente los comentarios de tu transmisión y activa el <em>Modo Voces Aleatorias</em> para que cada espectador tenga una voz diferente y viral en tu directo.
+        </div>
+      </div>
+
+      <!-- Columna Derecha: Cuadrícula de Funciones Clave -->
+      <div class="features-list-col">
+        <span class="badge-tag">Todo lo que Puedes Hacer</span>
+        <h2>Todo lo que Hace PuniLive por tus En Vivos</h2>
+        <p class="sub-text">
+          Diseñado para que cualquier streamer dinamice su transmisión en minutos, sin lidiar con configuraciones técnicas ni programas difíciles.
+        </p>
+
+        <div class="features-grid-mini">
+          <!-- Función 1 -->
+          <div class="feature-mini-card">
+            <div class="feat-mini-icon">⚡</div>
+            <h4>Conexión 1-Clic</h4>
+            <p>Solo pones tu <code>@usuario</code> de TikTok Live. Sin contraseña ni pasos raros.</p>
+          </div>
+
+          <!-- Función 2 -->
+          <div class="feature-mini-card">
+            <div class="feat-mini-icon">🎮</div>
+            <h4>Lanzador de Juegos</h4>
+            <p>Activa o cambia de juego al instante sin cortar tu transmisión.</p>
+          </div>
+
+          <!-- Función 3 -->
+          <div class="feature-mini-card">
+            <div class="feat-mini-icon">🎛</div>
+            <h4>Mapeo de Acciones</h4>
+            <p>Elige qué regalo (Rosa, Dona, Galaxia) o like detona cada poder.</p>
+          </div>
+
+          <!-- Función 4 -->
+          <div class="feature-mini-card">
+            <div class="feat-mini-icon">🗣</div>
+            <h4>Voz &amp; TTS Dinámico</h4>
+            <p>Voces virales leyendo el chat con modo aleatorio interactivo.</p>
+          </div>
+
+          <!-- Función 5 -->
+          <div class="feature-mini-card">
+            <div class="feat-mini-icon">🖥</div>
+            <h4>Overlays Transparentes</h4>
+            <p>Listo para capturar en TikTok Live Studio y OBS en vertical u horizontal.</p>
+          </div>
+
+          <!-- Función 6 -->
+          <div class="feature-mini-card">
+            <div class="feat-mini-icon">🔄</div>
+            <h4>Auto-Actualizaciones</h4>
+            <p>Un solo ejecutable (.exe). Busca actualizaciones y novedades con un clic.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. CATÁLOGO DE JUEGOS INTERACTIVOS (DISPONIBLES Y EN DESARROLLO)
+       ======================================================================== -->
+  <section class="games-section" id="juegos">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag">Catálogo Interactivo</span>
+        <h2 class="section-title">Catálogo de Juegos para tu Live</h2>
+        <p class="section-desc">
+          Comienza a jugar hoy mismo con nuestros títulos oficiales y disfruta de todos los nuevos juegos interactivos que estamos desarrollando permanentemente.
+        </p>
+      </div>
+
+      <div class="games-grid">
+        <!-- JUEGO 1: DEMOLICIÓN VS CONSTRUCCIÓN 3D -->
+        <article class="game-card">
+          <div class="game-cover-wrap">
+            <img src="assets/covers/demolicion_construccion_3d.svg" alt="Demolición vs Construcción 3D" />
+            <span class="game-version-badge">v1.5.3</span>
+            <span class="game-status-badge">● Actualizado</span>
+          </div>
+          <div class="game-card-body">
+            <h3 class="game-title">Demolición vs Construcción 3D</h3>
+            <p class="game-desc">
+              Meta de 500 pisos (ajustable de 100 a 1000). Batalla entre constructores con jetpacks que levantan la torre y demoledores con bolas gigantes, taladros y meteoritos.
+            </p>
+            <div class="game-tags">
+              <span class="game-tag-pill">3D</span>
+              <span class="game-tag-pill">Físicas</span>
+              <span class="game-tag-pill">Torre</span>
+              <span class="game-tag-pill">TikTok Live</span>
+              <span class="game-tag-pill">Demolición</span>
+            </div>
+            <button type="button" class="btn-game-powers" onclick="openGameModal('demolicion')">
+              Ver Poderes Asignables
+            </button>
+          </div>
+        </article>
+
+        <!-- JUEGO 2: PUNIRIDE -->
+        <article class="game-card">
+          <div class="game-cover-wrap">
+            <img src="assets/covers/puniride.svg" alt="PuniRide Motocross 2D" />
+            <span class="game-version-badge">v1.0.0</span>
+            <span class="game-status-badge">● Actualizado</span>
+          </div>
+          <div class="game-card-body">
+            <h3 class="game-title">PuniRide</h3>
+            <p class="game-desc">
+              Motocross 2D con cuatro biomas, física de saltos en rampas, nitro explosivo, cohete acumulativo, ave fénix y más de 10 acciones activadas por regalos del chat.
+            </p>
+            <div class="game-tags">
+              <span class="game-tag-pill">2D Racing</span>
+              <span class="game-tag-pill">Física de Saltos</span>
+              <span class="game-tag-pill">Nitro</span>
+              <span class="game-tag-pill">Cohete</span>
+              <span class="game-tag-pill">TikTok Live</span>
+            </div>
+            <button type="button" class="btn-game-powers" onclick="openGameModal('puniride')">
+              Ver Poderes Asignables
+            </button>
+          </div>
+        </article>
+
+        <!-- JUEGO 3: PUNITOOLSLIVE DEFENSA 2D -->
+        <article class="game-card">
+          <div class="game-cover-wrap">
+            <img src="assets/covers/punitool_defensa_2d.svg" alt="PunitoolsLive Defensa 2D" />
+            <span class="game-version-badge">v1.0.0</span>
+            <span class="game-status-badge">● Actualizado</span>
+          </div>
+          <div class="game-card-body">
+            <h3 class="game-title">PunitoolsLive Defensa 2D</h3>
+            <p class="game-desc">
+              Arcade de defensa de base donde tus espectadores invocan guerreros, arqueros, magos de fuego, agujeros negros y dragones para proteger o atacar tu muralla.
+            </p>
+            <div class="game-tags">
+              <span class="game-tag-pill">Arcade</span>
+              <span class="game-tag-pill">Defensa</span>
+              <span class="game-tag-pill">Agujero Negro</span>
+              <span class="game-tag-pill">TikTok Live</span>
+            </div>
+            <button type="button" class="btn-game-powers" onclick="openGameModal('defensa2d')">
+              Ver Poderes Asignables
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Banner de Nuevos Juegos en Desarrollo -->
+      <div class="games-upcoming-banner">
+        <div class="games-upcoming-text">
+          <h4>🚀 Nuevos Juegos en Desarrollo Permanente</h4>
+          <p>
+            Tu suscripción a PuniLive desbloquea automáticamente todos los juegos actuales y cada nuevo título que desarrollemos e integremos a la suite.
+          </p>
+        </div>
+        <a href="https://discord.gg/kgaBXDJ9uu" target="_blank" rel="noopener" class="btn-discord js-discord-link">
+          Sigue las Novedades en Discord
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. PLANES CON OFERTAS TENTADORAS ($7.99, $13.99, $24.99 USD)
+       ======================================================================== -->
+  <section class="pricing-section" id="planes">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag">Planes de Suscripción</span>
+        <h2 class="section-title">Ofertas Tentadoras para tu Canal</h2>
+        <p class="section-desc">
+          Elige el pase que mejor se adapte a tu ritmo de transmisión. Pago rápido y directo a través de <strong>PayPal.Me</strong>.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- PLAN 1: 7 DÍAS — $7.99 USD -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <h3 class="plan-name">Pase 7 Días</h3>
+            <p class="plan-sub">Ideal para probar y reventar tus directos de la semana</p>
+          </div>
+
+          <div class="plan-price-wrap">
+            <span class="old-price">$12.99</span>
+            <span class="plan-price">$7.99</span>
+            <span class="plan-currency">USD</span>
+          </div>
+
+          <span class="offer-pill">🔥 Ahorra 38% Hoy</span>
+
+          <ul class="plan-features">
+            <li class="plan-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Acceso total a <strong>Juegos Oficiales + Nuevos</strong></span>
+            </li>
+            <li class="plan-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Módulo de <strong>Voz &amp; TTS de TikTok</strong></span>
+            </li>
+            <li class="plan-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Mapeo ilimitado de regalos y likes</span>
+            </li>
+            <li class="plan-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Único ejecutable listo para usar (.exe)</span>
+            </li>
+          </ul>
+
+          <a href="https://www.paypal.com/paypalme/etpunisher/7.99" target="_blank" rel="noopener" class="btn-secondary" style="width:100%; text-align:center;">
+            Pagar con PayPal ($7.99)
+          </a>
+        </div>
+
+        <!-- PLAN 2: 15 DÍAS — $13.99 USD (MÁS POPULAR) -->
+        <div class="pricing-card featured">
+          <span class="ribbon-featured">★ Opción Más Popular entre Streamers</span>
+          <div class="plan-header">
+            <h3 class="plan-name">Pase 15 Días</h3>
+            <p class="plan-sub">La opción favorita de los streamers activos</p>
+          </div>
+
+          <div class="plan-price-wrap">
+            <span class="old-price">$22.99</span>
+            <span class="plan-price">$13.99</span>
+            <span class="plan-currency">USD</span>
+          </div>
+
+          <span class="offer-pill" style="background:rgba(255,31,61,0.2); color:#ff5722;">
+            ⚡ ¡Solo $0.93 USD por día!
+          </span>
+
+          <ul class="plan-features">
+            <li class="plan-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Acceso total a <strong>Juegos Oficiales + Nuevos</strong></span>
+            </li>
+            <li class="plan-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>24 Voces Neuronales</strong> de TikTok &amp; AI</span>
+            </li>
+            <li class="plan-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Modo Voces Aleatorias dinámico</span>
+            </li>
+            <li class="plan-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Soporte prioritario al streamer</span>
+            </li>
+          </ul>
+
+          <a href="https://www.paypal.com/paypalme/etpunisher/13.99" target="_blank" rel="noopener" class="btn-primary" style="width:100%; text-align:center;">
+            Pagar con PayPal ($13.99)
+          </a>
+        </div>
+
+        <!-- PLAN 3: 30 DÍAS VIP — $24.99 USD (MEJOR VALOR) -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <h3 class="plan-name">Pase 30 Días VIP</h3>
+            <p class="plan-sub">Un mes completo de alto impacto e ingresos en directo</p>
+          </div>
+
+          <div class="plan-price-wrap">
+            <span class="old-price">$39.99</span>
+            <span class="plan-price">$24.99</span>
+            <span class="plan-currency">USD</span>
+          </div>
+
+          <span class="offer-pill">💎 Menos de $0.83 USD / día</span>
+
+          <ul class="plan-features">
+            <li class="plan-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Acceso ilimitado por <strong>30 Días Completos</strong></span>
+            </li>
+            <li class="plan-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Todos los juegos + <strong>Acceso VIP a Lanzamientos</strong></span>
+            </li>
+            <li class="plan-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Voz &amp; TTS ilimitado sin cortes</span>
+            </li>
+            <li class="plan-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Soporte VIP Preferencial Directo</span>
+            </li>
+          </ul>
+
+          <a href="https://www.paypal.com/paypalme/etpunisher/24.99" target="_blank" rel="noopener" class="btn-secondary" style="width:100%; text-align:center;">
+            Pagar con PayPal ($24.99)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. OPINIONES DE STREAMERS & FAQ: 2 COLUMNAS EN WIDESCREEN
+       ======================================================================== -->
+  <section class="trust-faq-section" id="faq">
+    <div class="container trust-faq-2col">
+      <!-- Columna 1: Testimonios de Creadores Reales -->
+      <div>
+        <div class="section-header left-aligned">
+          <span class="badge-tag">Streamers Verificados</span>
+          <h2 class="section-title">Lo que Dicen Quienes ya lo Usan</h2>
+          <p class="section-desc">Resultados reales de streamers activos en TikTok Live.</p>
+        </div>
+
+        <div class="testimonials-stack">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              “La plataforma es muy buena y súper confiable. Tripliqué mis regalos en TikTok Live en mi primera semana con Demolición 3D.”
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SM</div>
+              <div>
+                <div class="author-name">@SoyMateoLive</div>
+                <div class="author-role">Streamer de TikTok Gaming</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              “El módulo de voces de TikTok leyendo comentarios hace que la gente no pare de comentar y mandar rosas. Me ayudó muchísimo a mejorar en mis En Vivos.”
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">VS</div>
+              <div>
+                <div class="author-name">@ValeriaStream</div>
+                <div class="author-role">Creadora de Contenido</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              “Súper fácil y ligera: solo descargué el .exe, puse mi usuario y ya estaba jugando con mi comunidad. Muy buena y nunca se cae en directo.”
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">KR</div>
+              <div>
+                <div class="author-name">@KingRamiroTT</div>
+                <div class="author-role">Streamer Diario</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna 2: Preguntas Frecuentes (FAQ) en Acordeón -->
+      <div>
+        <div class="section-header left-aligned">
+          <span class="badge-tag">Respuestas Rápidas</span>
+          <h2 class="section-title">Preguntas Frecuentes</h2>
+          <p class="section-desc">Todo lo que necesitas saber antes de iniciar.</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item open">
+            <button type="button" class="faq-question">
+              <span>¿PuniLive me pide la contraseña de TikTok?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <strong>No, nunca.</strong> PuniLive jamás te pide contraseña. Solo introduces tu nombre de usuario público (por ejemplo, <code>@tu_usuario</code>) mientras estás en vivo y la herramienta enlaza los eventos públicos del directo de forma 100% segura.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>¿Qué archivo debo descargar para empezar?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Únicamente descargas <strong>PuniLive (.exe)</strong> desde esta página. No necesitas descargar instaladores adicionales ni paquetes aparte: todo viene listo en ese único archivo ejecutable.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>¿Tendré acceso a nuevos juegos que vayan saliendo?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <strong>¡Sí, por supuesto!</strong> Actualmente inicias con los títulos oficiales activos y estamos en constante desarrollo de nuevos juegos interactivos. Tu licencia te da acceso a todas las nuevas incorporaciones.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>¿Cómo funcionan las voces de TikTok y el modo aleatorio?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              PuniLive integra 24 voces neuronales de TikTok e IA. Al activar el modo aleatorio, cada comentario del chat se reproduce con una voz distinta, transformando el directo en un show sumamente entretenido.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>¿Cómo pago y recibo mi licencia?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Pagas de forma rápida y segura a través de <strong>PayPal.Me</strong> (<strong>7 días por $7.99</strong>, <strong>15 días por $13.99</strong> o <strong>30 días por $24.99</strong>) y luego entras a nuestro <a href="https://discord.gg/kgaBXDJ9uu" target="_blank" rel="noopener" style="color:#ff5722; text-decoration:underline;">Servidor de Discord</a> para recibir tu clave de activación inmediata.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo-brand" style="margin-bottom:12px;">
+            <span>PuniLive</span>
+            <span class="logo-badge">TIKTOK</span>
+          </div>
+          <p>
+            Dinamiza tus Live, diviértete con tu comunidad y multiplica tus interacciones en TikTok con nuestra suite interactiva de juegos y voces.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Planes y Descarga</h4>
+          <div class="footer-links">
+            <a href="../PuniTool 4 Tiktok/release/PuniTools for TikTok 1.0.0.exe" download class="js-download-exe">Descargar PuniLive (.exe)</a>
+            <a href="https://discord.gg/kgaBXDJ9uu" target="_blank" rel="noopener" class="js-discord-link">Accede a nuestro Servidor de Discord</a>
+            <a href="https://www.paypal.com/paypalme/etpunisher/7.99" target="_blank" rel="noopener">Pase 7 Días — $7.99 USD</a>
+            <a href="https://www.paypal.com/paypalme/etpunisher/13.99" target="_blank" rel="noopener">Pase 15 Días — $13.99 USD</a>
+            <a href="https://www.paypal.com/paypalme/etpunisher/24.99" target="_blank" rel="noopener">Pase 30 Días VIP — $24.99 USD</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Comunidad y Soporte</h4>
+          <div class="footer-links">
+            <a href="https://discord.gg/kgaBXDJ9uu" target="_blank" rel="noopener" class="js-discord-link">Servidor Oficial de Discord</a>
+            <a href="#funciones">Qué Puedes Hacer</a>
+            <a href="#juegos">Catálogo de Juegos</a>
+            <a href="#planes">Planes y Ofertas</a>
+            <a href="#faq">Preguntas Frecuentes</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 PuniLive Studio · Todos los derechos reservados</span>
+        <span>Pagos Seguros vía PayPal.Me · Comunidad en Discord · Windows 10 &amp; 11</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODALES (PODERES Y PAYPAL)
+       ======================================================================== -->
+  <div class="modal-backdrop" id="gameModal" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <div class="modal-head">
+        <h3 id="gameModalTitle">Poderes del Juego</h3>
+        <button type="button" class="modal-close" onclick="closeModal('gameModal')">✕</button>
+      </div>
+      <div class="modal-body" id="gameModalBody"></div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="payPalModal" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <div class="modal-head">
+        <h3 id="payPalModalTitle">Activar Plan con PayPal</h3>
+        <button type="button" class="modal-close" onclick="closeModal('payPalModal')">✕</button>
+      </div>
+      <div class="modal-body" id="payPalModalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
