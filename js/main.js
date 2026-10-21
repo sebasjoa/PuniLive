@@ -1,7 +1,7 @@
 /**
  * PuniTools / PuniLive — JavaScript Principal
- * Gestión de los 3 planes con paypal.me/etpunisher, Discord oficial,
- * catálogo de juegos y modales interactivos.
+ * Gestión de los planes (1 día, 7 días, 15 días, 30 días) con paypal.me/etpunisher,
+ * Discord oficial, catálogo de juegos y modales interactivos.
  */
 
 const PUNITOOLS_CONFIG = {
@@ -11,8 +11,16 @@ const PUNITOOLS_CONFIG = {
   // Servidor oficial de Discord
   discordUrl: "https://discord.gg/WTdwjTfB2F",
 
-  // 3 Planes oficiales con paypal.me/etpunisher
+  // Planes oficiales con paypal.me/etpunisher
   plans: {
+    dia1: {
+      name: "Pase 1 Día",
+      duration: "24 Horas de Acceso Total",
+      price: "$2.00 USD",
+      oldPrice: "$3.99 USD",
+      discount: "⚡ Prueba Rápida 24 Horas",
+      url: "https://www.paypal.com/paypalme/etpunisher/2"
+    },
     dias7: {
       name: "Pase 7 Días",
       duration: "7 Días de Acceso Total",
@@ -164,7 +172,7 @@ window.openGameModal = function (gameKey) {
       🚀 <em>Tu suscripción incluye automáticamente acceso a este y a todos los nuevos juegos que estamos desarrollando continuamente.</em>
     </p>
     <div style="margin-top:20px; display:flex; gap:12px; flex-wrap:wrap;">
-      <a href="${PUNITOOLS_CONFIG.executableDownloadUrl}" class="btn-primary js-download-exe" style="flex:1;">
+      <a href="${PUNITOOLS_CONFIG.executableDownloadUrl}" download class="btn-primary js-download-exe" style="flex:1;">
         Descargar PuniLive (.exe)
       </a>
       <button type="button" class="btn-secondary" onclick="closeModal('gameModal')">
