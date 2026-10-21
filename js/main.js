@@ -9,7 +9,7 @@ const PUNITOOLS_CONFIG = {
   executableDownloadUrl: "https://github.com/sebasjoa/PuniLive/releases/latest/download/PuniLive-Portable.exe",
 
   // Servidor oficial de Discord
-  discordUrl: "https://discord.gg/kgaBXDJ9uu",
+  discordUrl: "https://discord.gg/WTdwjTfB2F",
 
   // 3 Planes oficiales con paypal.me/etpunisher
   plans: {
