@@ -184,7 +184,7 @@ window.openGameModal = function (gameKey) {
   modal.classList.add("active");
 };
 
-// Modal de Pago con PayPal
+// Modal de Pago con PayPal - Explicativo con instrucciones claras de entrega
 window.openPayPalModal = function (planKey) {
   const modal = document.getElementById("payPalModal");
   const titleEl = document.getElementById("payPalModalTitle");
@@ -194,25 +194,67 @@ window.openPayPalModal = function (planKey) {
   const plan = PUNITOOLS_CONFIG.plans[planKey];
   if (!plan) return;
 
-  titleEl.textContent = `Activar ${plan.name} — ${plan.price}`;
+  titleEl.innerHTML = `<span style="color:var(--accent-red); font-size:18px;">🛒</span> Finalizar Compra: ${plan.name}`;
+  
   bodyEl.innerHTML = `
-    <div style="text-align:center; padding:10px 0;">
-      <span class="offer-pill">${plan.discount}</span>
-      <div style="font-size:14px; color:#9da4b8; margin-bottom:4px;">${plan.duration}</div>
-      <div style="display:flex; align-items:center; justify-content:center; gap:10px; margin-bottom:14px;">
-        <span style="color:#6c738a; text-decoration:line-through; font-size:17px;">${plan.oldPrice}</span>
-        <strong style="font-family:var(--font-title); font-size:36px; color:#ffffff;">${plan.price}</strong>
+    <div class="paypal-modal-wrapper">
+      <!-- Tarjeta Resumen del Plan -->
+      <div class="paypal-summary-card">
+        <div class="paypal-summary-badge">${plan.discount}</div>
+        <h4 class="paypal-summary-title">${plan.name}</h4>
+        <div class="paypal-summary-price">
+          <span class="paypal-price-old">${plan.oldPrice}</span>
+          <span class="paypal-price-current">${plan.price}</span>
+        </div>
+        <p class="paypal-summary-duration">⚡ ${plan.duration}</p>
       </div>
-      <p style="color:#9da4b8; font-size:13px; line-height:1.6; max-width:440px; margin:0 auto 20px;">
-        Pago seguro y directo a través de <strong>PayPal.Me</strong>. Al completar el pago, únete a nuestro servidor de Discord o contáctanos para enviarte tu clave de activación inmediata.
-      </p>
-      <div style="display:flex; flex-direction:column; gap:10px; max-width:320px; margin:0 auto;">
-        <a href="${plan.url}" target="_blank" rel="noopener" class="btn-primary" style="width:100%;">
-          Ir a Pagar ${plan.price} con PayPal.Me
+
+      <!-- Pasos Explicativos de Activación -->
+      <div class="paypal-steps-card">
+        <h5 class="paypal-steps-header">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          ¿Cómo funciona el proceso de entrega de tu licencia?
+        </h5>
+
+        <div class="paypal-step-row">
+          <div class="paypal-step-badge">1</div>
+          <div class="paypal-step-text">
+            <strong>Pago Seguro vía PayPal</strong>
+            <p>Al pulsar el botón inferior serás redirigido a la pasarela oficial de <strong>PayPal.Me</strong> para completar tu pago de <strong>${plan.price}</strong>.</p>
+          </div>
+        </div>
+
+        <div class="paypal-step-row highlight">
+          <div class="paypal-step-badge">2</div>
+          <div class="paypal-step-text">
+            <strong>Envío de tu Clave al Correo de tu PayPal</strong>
+            <p>Tu código de licencia de activación será enviado directamente a la <strong>dirección de correo asociada a la cuenta de PayPal</strong> con la que realices el pago. <em>(Revisa también tu bandeja de Spam o correo no deseado)</em>.</p>
+          </div>
+        </div>
+
+        <div class="paypal-step-row">
+          <div class="paypal-step-badge">3</div>
+          <div class="paypal-step-text">
+            <strong>¿Entrega Inmediata o Soporte 24/7?</strong>
+            <p>Si deseas acelerar la activación al instante o tienes cualquier duda, únete a nuestro <strong>Discord Oficial</strong> y envía tu comprobante.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Acciones de Navegación -->
+      <div class="paypal-modal-actions">
+        <a href="${plan.url}" target="_blank" rel="noopener" class="btn-primary btn-paypal-direct">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.067 8.478c.492.88.556 2.014.3 3.327-.74 3.806-3.27 5.76-7.53 5.76h-2.1c-.42 0-.77.31-.84.72l-.76 4.81-.22 1.39c-.04.26-.26.45-.52.45H4.29c-.31 0-.55-.28-.5-.59l2.76-17.5c.05-.31.32-.54.64-.54h6.81c2.4 0 4.2.51 5.37 1.54.34.29.62.64.7 1.04z"/></svg>
+          <span>Continuar a PayPal para Pagar (${plan.price})</span>
         </a>
-        <a href="${PUNITOOLS_CONFIG.discordUrl}" target="_blank" rel="noopener" class="btn-discord" style="width:100%;">
+
+        <a href="${PUNITOOLS_CONFIG.discordUrl}" target="_blank" rel="noopener" class="btn-discord" style="width:100%; text-align:center; justify-content:center;">
           Accede a nuestro Servidor de Discord
         </a>
+
+        <button type="button" class="btn-modal-cancel" onclick="closeModal('payPalModal')">
+          ← Volver a los planes
+        </button>
       </div>
     </div>
   `;

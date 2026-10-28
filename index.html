@@ -337,9 +337,9 @@
             </li>
           </ul>
 
-          <a href="https://www.paypal.com/paypalme/etpunisher/2" target="_blank" rel="noopener" class="btn-secondary" style="width:100%; text-align:center;">
+          <button type="button" onclick="openPayPalModal('dia1')" class="btn-secondary" style="width:100%; text-align:center;">
             Pagar con PayPal ($2.00)
-          </a>
+          </button>
         </div>
 
         <!-- PLAN 1: 7 DÍAS — $7.99 USD -->
@@ -376,9 +376,9 @@
             </li>
           </ul>
 
-          <a href="https://www.paypal.com/paypalme/etpunisher/7.99" target="_blank" rel="noopener" class="btn-secondary" style="width:100%; text-align:center;">
+          <button type="button" onclick="openPayPalModal('dias7')" class="btn-secondary" style="width:100%; text-align:center;">
             Pagar con PayPal ($7.99)
-          </a>
+          </button>
         </div>
 
         <!-- PLAN 2: 15 DÍAS — $13.99 USD (MÁS POPULAR) -->
@@ -418,9 +418,9 @@
             </li>
           </ul>
 
-          <a href="https://www.paypal.com/paypalme/etpunisher/13.99" target="_blank" rel="noopener" class="btn-primary" style="width:100%; text-align:center;">
+          <button type="button" onclick="openPayPalModal('dias15')" class="btn-primary" style="width:100%; text-align:center;">
             Pagar con PayPal ($13.99)
-          </a>
+          </button>
         </div>
 
         <!-- PLAN 3: 30 DÍAS VIP — $24.99 USD (MEJOR VALOR) -->
@@ -457,9 +457,9 @@
             </li>
           </ul>
 
-          <a href="https://www.paypal.com/paypalme/etpunisher/24.99" target="_blank" rel="noopener" class="btn-secondary" style="width:100%; text-align:center;">
+          <button type="button" onclick="openPayPalModal('dias30')" class="btn-secondary" style="width:100%; text-align:center;">
             Pagar con PayPal ($24.99)
-          </a>
+          </button>
         </div>
       </div>
     </div>
@@ -608,10 +608,10 @@
           <div class="footer-links">
             <a href="https://github.com/sebasjoa/PuniLive/releases/latest/download/PuniLive-Portable.exe" class="js-download-exe">Descargar PuniLive (.exe)</a>
             <a href="https://discord.gg/WTdwjTfB2F" target="_blank" rel="noopener" class="js-discord-link">Accede a nuestro Servidor de Discord</a>
-            <a href="https://www.paypal.com/paypalme/etpunisher/2" target="_blank" rel="noopener">Pase 1 Día — $2.00 USD</a>
-            <a href="https://www.paypal.com/paypalme/etpunisher/7.99" target="_blank" rel="noopener">Pase 7 Días — $7.99 USD</a>
-            <a href="https://www.paypal.com/paypalme/etpunisher/13.99" target="_blank" rel="noopener">Pase 15 Días — $13.99 USD</a>
-            <a href="https://www.paypal.com/paypalme/etpunisher/24.99" target="_blank" rel="noopener">Pase 30 Días VIP — $24.99 USD</a>
+            <a href="javascript:void(0)" onclick="openPayPalModal('dia1')">Pase 1 Día — $2.00 USD</a>
+            <a href="javascript:void(0)" onclick="openPayPalModal('dias7')">Pase 7 Días — $7.99 USD</a>
+            <a href="javascript:void(0)" onclick="openPayPalModal('dias15')">Pase 15 Días — $13.99 USD</a>
+            <a href="javascript:void(0)" onclick="openPayPalModal('dias30')">Pase 30 Días VIP — $24.99 USD</a>
           </div>
         </div>
 
